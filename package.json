@@ -1,0 +1,15 @@
+{
+  "name": "first-discord-bot",
+  "version": "1.0.0",
+  "description": "the first bot made by Rohit while just starting to learn discord.js",
+  "main": "index.js",
+  "repository": "https://github.com/shockz09/first-discord-bot",
+  "author": "Rohit Mishra",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^13.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.14.0"
+  }
+}
