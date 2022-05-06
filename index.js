@@ -6,8 +6,11 @@ const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 client.once('ready', () => {
 	console.log('Ready!');
 });
+client.on("debug",console.debug)
+client.on("warn",console.warn)
 
 client.on('interactionCreate', async interaction => {
+	console.error(interaction);
 	if (!interaction.isCommand()) return;
 
 	const { commandName } = interaction;
