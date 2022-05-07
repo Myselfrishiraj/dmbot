@@ -1,12 +1,16 @@
 require('dotenv').config()
 const { Client, Intents } = require('discord.js');
-const { token } = process.env.DISCORD_TOKEN
+const  token  = process.env.DISCORD_TOKEN
 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 
 client.once('ready', () => {
 	console.log('Ready!');
 });
+
+if(token) {
+	console.log("it does exist");
+}
 client.on("debug",console.debug)
 client.on("warn",console.warn)
 
